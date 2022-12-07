@@ -32,16 +32,47 @@ ItemEvents.tooltip(e => {
     let whiteTooltip = (item, tooltip) => formattedTooltip('white', item, tooltip);
     //===== creative =====//
     let creative = [
-
+        'mtr:resource_pack_creator',
+        'mtr:bridge_creator_3',
+        'mtr:bridge_creator_5',
+        'mtr:bridge_creator_7',
+        'mtr:bridge_creator_9',
+        'mtr:tunnel_creator_4_3',
+        'mtr:tunnel_creator_4_5',
+        'mtr:tunnel_creator_4_7',
+        'mtr:tunnel_creator_4_9',
+        'mtr:tunnel_creator_5_3',
+        'mtr:tunnel_creator_5_5',
+        'mtr:tunnel_creator_5_7',
+        'mtr:tunnel_creator_5_9',
+        'mtr:tunnel_creator_6_3',
+        'mtr:tunnel_creator_6_5',
+        'mtr:tunnel_creator_6_7',
+        'mtr:tunnel_creator_6_9',
+        'mtr:tunnel_wall_creator_4_3',
+        'mtr:tunnel_wall_creator_4_5',
+        'mtr:tunnel_wall_creator_4_7',
+        'mtr:tunnel_wall_creator_4_9',
+        'mtr:tunnel_wall_creator_5_3',
+        'mtr:tunnel_wall_creator_5_5',
+        'mtr:tunnel_wall_creator_5_7',
+        'mtr:tunnel_wall_creator_5_9',
+        'mtr:tunnel_wall_creator_6_3',
+        'mtr:tunnel_wall_creator_6_5',
+        'mtr:tunnel_wall_creator_6_7',
+        'mtr:tunnel_wall_creator_6_9',
+        'mtr:cable_car_node_station',
     ];
     creative.forEach(items => {
         grayTooltip(items, 'Creative, unobtainable!');
     });
 
-    //===== construction wand tooltip =====//
+    //===== construction wand =====//
     aquaTooltip('constructionwand:stone_wand', `Builder's wand Renewal! Shift-scroll to set mode.`);
     aquaTooltip('constructionwand:iron_wand', `Builder's wand Renewal! Shift-scroll to set mode.`);
     aquaTooltip('constructionwand:diamond_wand', `Builder's wand Renewal! Shift-scroll to set mode.`);
     aquaTooltip('constructionwand:infinity_wand', `Builder's wand Renewal! Shift-scroll to set mode.`);
 
+    //===== car =====//
+    
 })

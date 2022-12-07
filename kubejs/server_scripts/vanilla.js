@@ -12,7 +12,7 @@ ServerEvents.recipes(e => {
 
     e.shaped('3x minecraft:glass', ['GGG', 'G G', 'GGG',], {
         G: 'minecraft:glass_pane'
-    });
+    }).id(`kubejs:minecraft/glass_reverse`);
 
     e.shaped('4x minecraft:ladder', ['S S', 'SPS', 'S S'], {
         S: '#forge:rods/wooden',

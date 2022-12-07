@@ -4,14 +4,10 @@ JEIEvents.hideItems(e => {
     global.recipe_disable.forEach(item => {
         e.hide(item);
     });
-    
-    utils.listOf([
-        //library items
-        Item.of('ftblibrary:fluid_container').ignoreNBT(),
-        'kubejs:dummy_fluid_item',
-    ]).forEach(a => {
+    libraryMods = [
+        '@theoneprobe'
+    ];
+    libraryMods.forEach(a => {
         e.hide(a);
     });
-
-    
 });

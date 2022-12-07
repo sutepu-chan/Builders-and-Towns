@@ -1,6 +1,7 @@
 JEIEvents.addItems(e => {
-    utils.listOf([
+    let vanillaItem = [
         'minecraft:dragon_egg',
         'minecraft:spawner'
-    ]).forEach(item => e.add(item));
+    ];
+    vanillaItem.forEach(item => e.add(item));
 });
