@@ -12,10 +12,10 @@
 	maxEntityHeight = 2.0
 	#Slowness multiplier for blocks
 	#Range: 0.0 ~ 1.7976931348623157E308
-	blockSlownessMultiplier = 1.5
+	blockSlownessMultiplier = 1.0
 	#Slowness multiplier for entities
 	#Range: 0.0 ~ 1.7976931348623157E308
-	entitySlownessMultiplier = 1.5
+	entitySlownessMultiplier = 1.0
 	#Maximum stack limit for entities
 	#Range: > 1
 	maxEntityStackLimit = 10
@@ -24,7 +24,7 @@
 	#Allow all blocks to be picked up, not just Tile Entites
 	pickupAllBlocks = false
 	#Whether Blocks and Entities slow the creative player down when carried
-	slownessInCreative = false
+	slownessInCreative = true
 	#Whether hostile mobs should be able to picked up in survival mode
 	pickupHostileMobs = false
 	#Larger Entities slow down the player more

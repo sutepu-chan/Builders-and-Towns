@@ -1,4 +1,4 @@
-onEvent('recipes', e => {
+ServerEvents.recipes(e => {
     //===== function =====//
     let shapedSurround = (colorItem, dye, array) => {
         e.shaped(Item.of(colorItem, 8), ['CCC', 'CDC', 'CCC'], {

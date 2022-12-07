@@ -61,7 +61,7 @@ function food_effect_tooltip_line(entry) {
 }
 
 
-onEvent("item.tooltip", event => {
+ItemEvent.tooltip(event => {
 
 	// check all items, since there's no way I know of to
 	// select just the items that are edible

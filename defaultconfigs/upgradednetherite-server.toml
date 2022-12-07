@@ -4,31 +4,31 @@
 	[Armor."Set Option"]
 		#How many pieces of Gold Upgraded armor are needed to activate the effects?
 		#Range: 1 ~ 4
-		UpgradedPlayerGoldArmorRequireSet = 4
+		UpgradedPlayerGoldArmorRequireSet = 2
 		#How many pieces of Fire Upgraded armor are needed to activate the effects?
 		#Range: 1 ~ 4
-		UpgradedPlayerFireArmorRequireSet = 4
+		UpgradedPlayerFireArmorRequireSet = 2
 		#How many pieces of Ender Upgraded armor are needed to activate the effects?
 		#Range: 1 ~ 4
-		UpgradedPlayerEnderArmorRequireSet = 4
+		UpgradedPlayerEnderArmorRequireSet = 2
 		#How many pieces of Water Upgraded armor are needed to activate the effects?
 		#Range: 1 ~ 4
-		UpgradedPlayerWaterArmorRequireSet = 4
+		UpgradedPlayerWaterArmorRequireSet = 2
 		#How many pieces of Wither Upgraded armor are needed to activate the effects?
 		#Range: 1 ~ 4
-		UpgradedPlayerWitherArmorRequireSet = 4
+		UpgradedPlayerWitherArmorRequireSet = 2
 		#How many pieces of Poison Upgraded armor are needed to activate the effects?
 		#Range: 1 ~ 4
-		UpgradedPlayerPoisonArmorRequireSet = 4
+		UpgradedPlayerPoisonArmorRequireSet = 2
 		#How many pieces of Phantom Upgraded armor are needed to activate the effects?
 		#Range: 1 ~ 4
-		UpgradedPlayerPhantomArmorRequireSet = 4
+		UpgradedPlayerPhantomArmorRequireSet = 2
 		#How many pieces of Feather Upgraded armor are needed to activate the effects?
 		#Range: 1 ~ 4
-		UpgradedPlayerFeatherArmorRequireSet = 4
+		UpgradedPlayerFeatherArmorRequireSet = 2
 		#How many pieces of Echo Upgraded armor are needed to activate the effects?
 		#Range: 1 ~ 4
-		UpgradedPlayerEchoArmorRequireSet = 4
+		UpgradedPlayerEchoArmorRequireSet = 2
 
 [Effect]
 
@@ -41,19 +41,19 @@
 			EnableLuckBonus = true
 			#How much is the luck bonus increased ?
 			#Range: 1 ~ 99
-			LuckBonus = 2
+			LuckBonus = 3
 
 		[Effect.Gold."Tool&Weapon"]
 			#Enable Gold Upgraded Weapon Effect : Increase Damage ?
 			EnableDamageBonusGoldWeapon = true
 			#By how much are the damages increased in percentage ?
 			#Range: 1 ~ 999
-			DamageBonusGoldWeapon = 10
+			DamageBonusGoldWeapon = 25
 			#Enable Gold Upgraded Weapon Effect : Increase Looting ?
 			EnableLootingBonus = true
 			#How much is the looting bonus increased ?
 			#Range: 1 ~ 99
-			LootingBonus = 1
+			LootingBonus = 2
 			#How much is the looting bonus increased if enchanted ?
 			#Range: 1 ~ 99
 			LootingEnchantBonus = 1
@@ -61,7 +61,7 @@
 			EnableFortuneBonus = true
 			#How much is the fortune bonus increased ?
 			#Range: 1 ~ 99
-			FortuneBonus = 1
+			FortuneBonus = 2
 			#How much is the fortune bonus increased if enchanted ?
 			#Range: 1 ~ 99
 			FortuneEnchantBonus = 1
@@ -88,15 +88,15 @@
 			#Enable Fire Upgraded Tool&Weapon Effect : Auto-Smelt ?
 			EnableAutoSmelt = true
 			#Auto-Smelt is affected by Fortune ? (Only Ingot & Charcoal)
-			EnableAutoSmeltFortune = false
+			EnableAutoSmeltFortune = true
 			#Enable Fire Upgraded Weapon Effect : Increase Damage ?
 			EnableDamageBonusFireWeapon = true
 			#By how much are the damages increased in percentage ?
 			#Range: 1 ~ 999
-			DamageBonusFireWeapon = 4
+			DamageBonusFireWeapon = 15
 			#By how much are the damages increased in percentage if enchanted ?
 			#Range: 1 ~ 999
-			DamageBonusFireEnchantWeapon = 3
+			DamageBonusFireEnchantWeapon = 10
 
 	[Effect.Ender]
 
@@ -115,7 +115,7 @@
 			EnableDamageBonusEnderWeapon = true
 			#By how much are the damages increased in percentage ?
 			#Range: 1 ~ 999
-			DamageBonusEnderWeapon = 4
+			DamageBonusEnderWeapon = 70
 			#Enable Ender Upgraded Weapon Effect : Prevent Teleport ?
 			EnablePreventTeleport = true
 			#Enable Ender Upgraded Weapon Effect : Double Looting against Enderman ?
@@ -148,12 +148,12 @@
 			EnableDamageBonusWaterWeapon = true
 			#By how much are the damages increased in percentage ?
 			#Range: 1 ~ 999
-			DamageBonusWaterWeapon = 10
+			DamageBonusWaterWeapon = 25
 			#Enable Water Upgraded Weapon Effect : Increase against Enderman Damage ?
 			EnableDamageBonusWaterEndermanWeapon = true
 			#By how much are the damages against increased Enderman in percentage ?
 			#Range: 1 ~ 999
-			DamageBonusWaterEndermanWeapon = 10
+			DamageBonusWaterEndermanWeapon = 15
 			#Enable Water Upgraded Tool Effect : Increase Mining Speed underwater ?
 			EnableMiningSpeedUnderwater = true
 
@@ -178,7 +178,7 @@
 			EnableDamageBonusWitherWeapon = true
 			#By how much are the damages increased in percentage ?
 			#Range: 1 ~ 999
-			DamageBonusWitherWeapon = 4
+			DamageBonusWitherWeapon = 15
 			#Enable Wither Upgraded Weapon Effect : Wither Effect ?
 			EnableWitherEffect = true
 
@@ -205,7 +205,7 @@
 			EnableDamageBonusPoisonWeapon = true
 			#By how much are the damages increased in percentage ?
 			#Range: 1 ~ 999
-			DamageBonusPoisonWeapon = 4
+			DamageBonusPoisonWeapon = 15
 			#Enable Poison Upgraded Weapon Effect : Poison Effect ?
 			EnablePoisonEffect = true
 
@@ -215,7 +215,7 @@
 			#Enable Phantom Upgraded Armor Effect : Fall damage Immune ?
 			EnableFallImmune = true
 			#Enable Phantom Upgraded Armor Effect : Step Height ?
-			EnableStepHeight = true
+			EnableStepHeight = false
 
 			[Effect.Phantom.Armor.Durability]
 				#Phantom Upgraded Armor loose durability when protect the player ? (Depend on fall distance)
@@ -229,14 +229,14 @@
 			EnableDamageBonusPhantomWeapon = true
 			#By how much are the damages increased in percentage ?
 			#Range: 1 ~ 999
-			DamageBonusPhantomWeapon = 10
+			DamageBonusPhantomWeapon = 70
 			#Enable Phantom Upgraded Tool Effect : Glowing Effect ?
 			EnableGlowingEffect = true
 			#Enable Phantom Upgraded Tool Effect : Reach ?
 			EnableReachEffect = true
 			#By how much are the reach increased ?
 			#Range: 1 ~ 99
-			BonusReachTool = 2
+			BonusReachTool = 3
 
 	[Effect.Feather]
 		#Enable Feather Upgraded Tool Effect : Attracts Items ?
@@ -276,24 +276,24 @@
 			EnableHealthMalus = true
 			#By how much are the health reduced in percentage ?
 			#Range: 1 ~ 99
-			HealthMalus = 10
+			HealthMalus = 15
 
 		[Effect.Corrupt."Tool&Weapon"]
 			#Enable Corrupt Upgraded Weapon Effect : Increase Damage ?
 			EnableDamageBonusCorruptWeapon = true
 			#By how much are the damages increased in percentage ?
 			#Range: 1 ~ 999
-			DamageBonusCorruptWeapon = 7
+			DamageBonusCorruptWeapon = 25
 			#Enable Corrupt Upgraded Weapon Effect : Increase Looting ?
 			EnableLootingBonusCorruptWeapon = true
 			#How much is the looting bonus increased ?
 			#Range: 1 ~ 99
-			LootingBonusCorruptWeapon = 2
+			LootingBonusCorruptWeapon = 3
 			#Enable Gold Upgraded Weapon Effect : Increase Fortune ?
 			EnableFortuneBonusCorruptTool = true
 			#How much is the fortune bonus increased ?
 			#Range: 1 ~ 99
-			FortuneBonusCorruptTool = 2
+			FortuneBonusCorruptTool = 3
 
 	[Effect.Echo]
 
@@ -304,7 +304,7 @@
 			EnableKeepItemsChance = true
 			#What are the chances that your items will remain in your inventory when you die?
 			#Range: 1 ~ 100
-			KeepItemsChance = 50
+			KeepItemsChance = 80
 			#Enable Echo Upgraded Armor Effect : Reduce Damage ?
 			EnableDamageBonusEchoArmor = true
 			#By how much is the damage reduced in percentage ?
@@ -321,13 +321,13 @@
 			EnableDamageBonusEchoWeapon = true
 			#By how much are the damages increased in percentage ?
 			#Range: 1 ~ 999
-			DamageBonusEchoWeapon = 20
+			DamageBonusEchoWeapon = 70
 			#Enable Echo Upgraded Tool Effect : Exp Bonus ?
 			EnableBonusExpEcho = true
 			#How many exp minimum?
 			#Range: 0 ~ 999
-			MinExpEcho = 2
+			MinExpEcho = 5
 			#How many exp maximum?
 			#Range: 0 ~ 999
-			MaxExpEcho = 5
+			MaxExpEcho = 20
 
