@@ -1,4 +1,4 @@
-REIEvents.information(e => {
+JEIEvents.information(e => {
     //===== waystone =====//
     e.add('waystones:return_scroll', 'Return to your previous waystone.');
     e.add('waystones:bound_scroll', 'RC to bind to a waystone. Hold RC to teleport to the binded waystone.');

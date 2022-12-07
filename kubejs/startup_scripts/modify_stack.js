@@ -1,4 +1,4 @@
-StartupEvents.modification(e => {
+ItemEvents.modification(e => {
 	let colors = ['white', 'orange', 'magenta', 'light_blue', 'yellow', 'lime', 'pink', 'gray', 'light_gray', 'cyan', 'purple', 'blue', 'brown', 'green', 'red', 'black'];
 	function modifyStack(listOfItems, countPerStack) {
 		listOfItems.forEach(item => {

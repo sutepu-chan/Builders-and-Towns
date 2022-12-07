@@ -1,4 +1,4 @@
-REIEvents.addItems(e => {
+JEIEvents.addItems(e => {
     utils.listOf([
         'minecraft:dragon_egg',
         'minecraft:spawner'

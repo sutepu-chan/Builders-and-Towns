@@ -1,10 +1,9 @@
+/* to be used with REI
 REIEvents.group(e => {
     //groupItemsByTag(id, name, tag)
-    /*
-    groupItemsIf(id, name, item => {
-        condition
-    })
-    */
+    //groupItemsIf(id, name, item => {
+    //    condition
+    //})
     //groupFluidsByTag(id, name, fluid)
     //===== color variants =====//
     e.groupItems('kubejs:minecraft/wools', 'Vanilla Wools', [
@@ -44,3 +43,4 @@ REIEvents.group(e => {
         e.groupSameItem(`kubejs:rei_groups/${namespace}/${path}`, item.getName(), item);
     });
 });
+*/
