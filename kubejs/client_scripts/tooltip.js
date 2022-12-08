@@ -74,5 +74,15 @@ ItemEvents.tooltip(e => {
     aquaTooltip('constructionwand:infinity_wand', `Builder's wand Renewal! Shift-scroll to set mode.`);
 
     //===== car =====//
-    
+    grayTooltip('car:oilmill', 'Convert Canola in Oil');
+    grayTooltip('car:blastfurnace', 'Convert Wood Logs into Methanol');
+    grayTooltip('car:generator', 'Generate FE using BioDiesel');
+    grayTooltip('car:dynamo', 'Generate FE by rotating crank on top');
+    grayTooltip('car:crank', 'Use in Dynamo in FE generation');
+    grayTooltip('car:tank', 'Store 16,000mB fluid. Retain fluid when broken.');
+    grayTooltip('car:cable', 'Energy Pipe');
+    grayTooltip('car:methanol_bucket', 'Convert Oil and Methanol into Canola Methanol Mix');
+    grayTooltip('car:split_tank', 'Convert Canola Methanol Mix into Glycerin and Bio Diesel');
+    grayTooltip('car:glycerin_bucket', 'Completely useless');
+    grayTooltip('car:gas_station', 'Fill nearby vehicles using Bio Diesel');
 })
