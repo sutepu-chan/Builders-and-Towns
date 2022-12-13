@@ -4,7 +4,7 @@ ServerEvents.recipes(e => {
         G: '#forge:gears/iron',
         S: '#forge:rods/wooden'
     }).id(`kubejs:structurize/caliper`);
-    
+
     e.remove({ id: 'structurize:sceptergold' });
     e.shaped('structurize:sceptergold', [' C', 'S '], {
         C: '#minecraft:stone_crafting_materials',

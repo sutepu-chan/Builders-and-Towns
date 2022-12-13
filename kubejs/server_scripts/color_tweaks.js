@@ -39,7 +39,6 @@ ServerEvents.recipes(e => {
         let brick_extra = [];
         let floating_carpet = [];
         let curtain = [];
-        let sharestone = [];
         let transporter_body = [];
         let suv_body = [];
         let sport_body = [];
@@ -72,7 +71,6 @@ ServerEvents.recipes(e => {
                 brick_extra.push(`domum_ornamentum:${b}_brick_extra`);
                 floating_carpet.push(`domum_ornamentum:${b}_floating_carpet`);
                 curtain.push(`mcwwindows:${b}_curtain`);
-                sharestone.push(`waystones:${b}_sharestone`);
                 transporter_body.push(`car:${b}_transporter_body`);
                 suv_body.push(`car:${b}_suv_body`);
                 sport_body.push(`car:${b}_sport_body`);
@@ -105,7 +103,6 @@ ServerEvents.recipes(e => {
         shapedSurround(`domum_ornamentum:${a}_brick_extra`, a, brick_extra);
         shapedSurround(`domum_ornamentum:${a}_floating_carpet`, a, floating_carpet);
         e.shapeless(`mcwwindows:${a}_curtain`, [`#forge:dyes/${a}`, curtain]).id(`kubejs:mcwwindows/${a}_curtain_from_dye`);
-        e.shapeless(`waystones:${a}_sharestone`, [`#forge:dyes/${a}`, sharestone]).id(`kubejs:waystones/${a}_sharestone_from_dye`);
         e.shapeless(`car:${a}_transporter_body`, [`#forge:dyes/${a}`, transporter_body]).id(`kubejs:car/${a}_transporter_body_from_dye`);
         e.shapeless(`car:${a}_suv_body`, [`#forge:dyes/${a}`, suv_body]).id(`kubejs:car/${a}_suv_body_from_dye`);
         e.shapeless(`car:${a}_sport_body`, [`#forge:dyes/${a}`, sport_body]).id(`kubejs:car/${a}_sport_body_from_dye`);
@@ -113,6 +110,6 @@ ServerEvents.recipes(e => {
         e.shapeless(`car:${a}_tank_container`, [`#forge:dyes/${a}`, tank_container]).id(`kubejs:car/${a}_tank_container_from_dye`);
         e.shapeless(`mcwlights:${a}_lamp`, [`#forge:dyes/${a}`, lamp]).id(`kubejs:mcwlights/${a}_lamp_from_dye`);
         e.shapeless(`mcwlights:${a}_ceiling_light`, [`#forge:dyes/${a}`, ceiling_light]).id(`kubejs:mcwlights/${a}_ceiling_light_from_dye`);
-        e.shapeless(`mcwlights:${a}_paper_lamp`, [`#forge:dyes/${a}`, paper_lamp]).id(`kubejs:mcwlights/${a}_paper_lamp_from_dye`);     
+        e.shapeless(`mcwlights:${a}_paper_lamp`, [`#forge:dyes/${a}`, paper_lamp]).id(`kubejs:mcwlights/${a}_paper_lamp_from_dye`);
     });
 });

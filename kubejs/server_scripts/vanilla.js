@@ -18,7 +18,7 @@ ServerEvents.recipes(e => {
         S: '#forge:rods/wooden',
         P: '#minecraft:planks'
     });
-    
+
     e.shaped('minecraft:hopper', ['ILI', 'ILI', ' I '], {
         L: '#minecraft:logs',
         I: '#forge:ingots/iron'

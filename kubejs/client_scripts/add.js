@@ -1,7 +1,8 @@
 JEIEvents.addItems(e => {
     let vanillaItem = [
         'minecraft:dragon_egg',
-        'minecraft:spawner'
+        'minecraft:spawner',
+        'ftbquests:book'
     ];
     vanillaItem.forEach(item => e.add(item));
 });

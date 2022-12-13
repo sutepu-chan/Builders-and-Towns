@@ -8,13 +8,22 @@ ServerEvents.recipes(e => {
         'oresabovediamonds:deepslate_black_opal_ore',
         'oresabovediamonds:nether_black_opal_ore',
         'oresabovediamonds:end_black_opal_ore'
-    ]
+    ];
     ores.forEach(ore => {
-        e.remove({ input: ore })
-    })
+        e.remove({ input: ore });
+    });
+    let smeltingids = [
+        'oresabovediamonds:smelting_amethyst',
+        'oresabovediamonds:smelting_black_opal',
+        'oresabovediamonds:smelting_amethyst2',
+        'oresabovediamonds:smelting_black_opal2'
+    ];
+    smeltingids.forEach(smeltingid => {
+        e.remove({ id: smeltingid });
+    });
     let compatSmelting = (ingredient, result) => {
-        e.smelting(result, ingredient);
-        e.blasting(result, ingredient);
+        e.smelting(result, ingredient).id(`kubejs:smelting/${result.replace(':', '/')}`);
+        e.blasting(result, ingredient).id(`kubejs:blasting/${result.replace(':', '/')}`);
     };
     compatSmelting([
         'oresabovediamonds:amethyst_ore',

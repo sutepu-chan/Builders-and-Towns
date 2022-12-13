@@ -33,11 +33,4 @@ ServerEvents.recipes(e => {
         'diorite',
         'granite'
     ]);
-    colors.forEach(color => {
-        e.remove({ id: `mcwwindows:${color}_mosaic_glass` });
-        e.shaped(`8x mcwwindows:${color}_mosaic_glass`, ['GGG', 'GWG', 'GGG'], {
-            G: `minecraft:${color}_stained_glass`,
-            W: `minecraft:${color}_wool`,
-        }).id(`kubejs:mcwwindows/${color}_mosaic_glass`);
-    });
 });

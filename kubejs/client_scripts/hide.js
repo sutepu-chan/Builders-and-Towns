@@ -46,7 +46,9 @@ JEIEvents.hideItems(e => {
     });
 
     let libraryMods = [
-        '@theoneprobe'
+        '@theoneprobe',
+        '@itemfilters',
+        '@ftbquests'
     ];
     libraryMods.forEach(a => {
         e.hide(a);

@@ -81,8 +81,11 @@ ItemEvents.tooltip(e => {
     grayTooltip('car:crank', 'Use in Dynamo in FE generation');
     grayTooltip('car:tank', 'Store 16,000mB fluid. Retain fluid when broken.');
     grayTooltip('car:cable', 'Energy Pipe');
-    grayTooltip('car:methanol_bucket', 'Convert Oil and Methanol into Canola Methanol Mix');
+    grayTooltip('car:backmix_reactor', 'Convert Oil and Methanol into Canola Methanol Mix');
     grayTooltip('car:split_tank', 'Convert Canola Methanol Mix into Glycerin and Bio Diesel');
     grayTooltip('car:glycerin_bucket', 'Completely useless');
     grayTooltip('car:gas_station', 'Fill nearby vehicles using Bio Diesel');
+
+    //===== avaritia =====//
+    darkPurpleTooltip('@avaritia', 'Items for development! Not part of game contents!')
 })
