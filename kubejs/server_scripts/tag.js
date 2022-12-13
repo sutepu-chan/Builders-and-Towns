@@ -12,7 +12,6 @@ ServerEvents.tags('item', e => {
     e.add('forge:hoes', /.+:.+_hoe/);
     e.add('forge:swords', /.+:.+_sword/);
     e.add('upgradednetherite_items:upgraded_netherite_totem', [
-        'upgradednetherite_items:corrupt_upgraded_netherite_totem',
         'upgradednetherite_items:echo_upgraded_netherite_totem'
     ]);
     e.add('legendarytooltips:upgradednetherite_tools', [
@@ -29,6 +28,20 @@ ServerEvents.tags('item', e => {
         '#upgradednetherite:upgraded_netherite_boots',
         '#upgradednetherite:upgraded_netherite_horse_armor',
         '#upgradednetherite_items:upgraded_netherite_totem',
+        'upgradednetherite:corrupt_upgraded_netherite_sword',
+        'upgradednetherite:corrupt_upgraded_netherite_bow',
+        'upgradednetherite:corrupt_upgraded_netherite_crossbow',
+        'upgradednetherite:corrupt_upgraded_netherite_pickaxe',
+        'upgradednetherite:corrupt_upgraded_netherite_shovel',
+        'upgradednetherite:corrupt_upgraded_netherite_axe',
+        'upgradednetherite:corrupt_upgraded_netherite_shield',
+        'upgradednetherite:corrupt_upgraded_netherite_helmet',
+        'upgradednetherite:corrupt_upgraded_netherite_chestplate',
+        'upgradednetherite:corrupt_upgraded_netherite_leggings',
+        'upgradednetherite:corrupt_upgraded_netherite_boots',
+        'upgradednetherite:corrupt_upgraded_netherite_horse_armor',
+        'upgradednetherite_items:corrupt_upgraded_netherite_totem',
+
     ]);
     e.add('legendarytooltips:upgradednetherite_items', [
         'upgradednetherite:gold_upgraded_netherite_ingot',
@@ -53,6 +66,8 @@ ServerEvents.tags('item', e => {
         'upgradednetherite:echo_essence',
         'upgradednetherite_items:gold_upgraded_netherite_apple',
         'upgradednetherite_items:ender_upgraded_netherite_pearl',
+        'upgradednetherite:corrupt_upgraded_netherite_ingot',
+        'upgradednetherite:corrupt_essence',
     ]);
     e.add('legendarytooltips:diamond_items', [
         'minecraft:diamond_block',
@@ -182,7 +197,7 @@ ServerEvents.tags('item', e => {
         'oresabovediamonds:amethyst_pickaxe',
         'oresabovediamonds:amethyst_shovel',
         'oresabovediamonds:amethyst_axe',
-        'oresabovediamonds:amethyst_hole',
+        'oresabovediamonds:amethyst_hoe',
         'oresabovediamonds:amethyst_helmet',
         'oresabovediamonds:amethyst_chestplate',
         'oresabovediamonds:amethyst_leggings',
