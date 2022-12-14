@@ -4,6 +4,7 @@ StartupEvents.registry('item', e => {
         .attackDamageBaseline(16777216)
         .speedBaseline(16777216)
         .displayName("Sword of Cosmos")
+        .rarity('epic')
         .maxDamage(10000000);
     e.create('avaritia:ultimate_stew')
         .maxStackSize(64)
