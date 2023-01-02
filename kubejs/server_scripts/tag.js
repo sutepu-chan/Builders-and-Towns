@@ -11,9 +11,6 @@ ServerEvents.tags('item', e => {
     e.add('forge:axes', /.+:.+_axe/);
     e.add('forge:hoes', /.+:.+_hoe/);
     e.add('forge:swords', /.+:.+_sword/);
-    e.add('upgradednetherite_items:upgraded_netherite_totem', [
-        'upgradednetherite_items:echo_upgraded_netherite_totem'
-    ]);
     e.add('legendarytooltips:upgradednetherite_tools', [
         '#upgradednetherite:upgraded_netherite_sword',
         '#upgradednetherite:upgraded_netherite_bow',
@@ -27,7 +24,6 @@ ServerEvents.tags('item', e => {
         '#upgradednetherite:upgraded_netherite_leggings',
         '#upgradednetherite:upgraded_netherite_boots',
         '#upgradednetherite:upgraded_netherite_horse_armor',
-        '#upgradednetherite_items:upgraded_netherite_totem',
         'upgradednetherite:corrupt_upgraded_netherite_sword',
         'upgradednetherite:corrupt_upgraded_netherite_bow',
         'upgradednetherite:corrupt_upgraded_netherite_crossbow',
@@ -40,7 +36,6 @@ ServerEvents.tags('item', e => {
         'upgradednetherite:corrupt_upgraded_netherite_leggings',
         'upgradednetherite:corrupt_upgraded_netherite_boots',
         'upgradednetherite:corrupt_upgraded_netherite_horse_armor',
-        'upgradednetherite_items:corrupt_upgraded_netherite_totem',
 
     ]);
     e.add('legendarytooltips:upgradednetherite_items', [
@@ -64,8 +59,6 @@ ServerEvents.tags('item', e => {
         'upgradednetherite:feather_essence',
         'upgradednetherite:corrupt_essence',
         'upgradednetherite:echo_essence',
-        'upgradednetherite_items:gold_upgraded_netherite_apple',
-        'upgradednetherite_items:ender_upgraded_netherite_pearl',
         'upgradednetherite:corrupt_upgraded_netherite_ingot',
         'upgradednetherite:corrupt_essence',
     ]);
@@ -120,8 +113,6 @@ ServerEvents.tags('item', e => {
         'upgradednetherite:netherite_crossbow',
         'upgradednetherite:netherite_shield',
         'upgradednetherite:netherite_horse_armor',
-        'upgradednetherite_items:netherite_apple',
-        'upgradednetherite_items:netherite_totem',
         'witherbold:witherbold_sword',
         'xtraarrows:netherite_arrow',
         'xtraarrows:netherite_explosive_arrow',
@@ -270,8 +261,6 @@ ServerEvents.tags('item', e => {
         'phantasm:stellium_boots',
     ]);
     e.add('legendarytooltips:flourish_food', [
-        'upgradednetherite_items:enchanted_netherite_apple',
-        'upgradednetherite_items:enchanted_gold_upgraded_netherite_apple',
         'minecraft:enchanted_golden_apple'
     ]);
     e.add('legendarytooltips:ender_items', [
