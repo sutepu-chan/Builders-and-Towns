@@ -9,7 +9,6 @@ ServerEvents.recipes(e => {
     e.shaped('16x minecraft:stick', ['L', 'L'], {
         'L': '#minecraft:logs'
     }).id(`kubejs:minecraft/sticks`);
-
     e.shaped('3x minecraft:glass', ['GGG', 'G G', 'GGG',], {
         G: 'minecraft:glass_pane'
     }).id(`kubejs:minecraft/glass_reverse`);
@@ -18,7 +17,6 @@ ServerEvents.recipes(e => {
         S: '#forge:rods/wooden',
         P: '#minecraft:planks'
     });
-
     e.shaped('minecraft:hopper', ['ILI', 'ILI', ' I '], {
         L: '#minecraft:logs',
         I: '#forge:ingots/iron'

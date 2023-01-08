@@ -40,7 +40,7 @@ ServerEvents.recipes(e => {
         'mtr:station_color_stained_glass'
     ];
     mtrItems.forEach(item => {
-        e.replaceInput({ output: item }, '#c:dyes', '#forge:wool');
+        e.replaceInput({ output: item }, '#c:dyes', '#minecraft:wool');
     });
 
 });

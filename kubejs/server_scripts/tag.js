@@ -1,6 +1,7 @@
 //priority: 99
 ServerEvents.tags('item', e => {
     e.add('minecraft:logs_unstripped', /^.+:(?!stripped_).+_log$/);
+    e.add('minecraft:logs_stripped', /^.+:(?stripped_).+_log$/);
     e.add('minecraft:leaves', ['phantasm:pream_leaves'])
     e.add('mtr:rail_connector_two_way', ['mtr:rail_connector_20', 'mtr:rail_connector_40', 'mtr:rail_connector_60', 'mtr:rail_connector_80', 'mtr:rail_connector_120', 'mtr:rail_connector_160', 'mtr:rail_connector_200', 'mtr:rail_connector_300']);
     e.add('mtr:rail_connector_one_way', ['mtr:rail_connector_20_one_way', 'mtr:rail_connector_40_one_way', 'mtr:rail_connector_60_one_way', 'mtr:rail_connector_80_one_way', 'mtr:rail_connector_120_one_way', 'mtr:rail_connector_160_one_way', 'mtr:rail_connector_200_one_way', 'mtr:rail_connector_300_one_way']);
@@ -76,7 +77,6 @@ ServerEvents.tags('item', e => {
         'minecraft:diamond_boots',
         'minecraft:diamond_horse_armor',
         'easypaxellite:diamond_paxel',
-        'stalwart_dungeons:diamond_hammer',
         'xtraarrows:diamond_arrow',
         'xtraarrows:diamond_explosive_arrow',
         'xtraarrows:diamond_lightning_arrow',
@@ -108,12 +108,10 @@ ServerEvents.tags('item', e => {
         'davespotioneering:netherite_gauntlet',
         'easypaxellite:netherite_paxel',
         'easypaxellite:netherite_paxel_ingot',
-        'stalwart_dungeons:netherite_hammer',
         'upgradednetherite:netherite_bow',
         'upgradednetherite:netherite_crossbow',
         'upgradednetherite:netherite_shield',
         'upgradednetherite:netherite_horse_armor',
-        'witherbold:witherbold_sword',
         'xtraarrows:netherite_arrow',
         'xtraarrows:netherite_explosive_arrow',
         'xtraarrows:netherite_lightning_arrow',
@@ -150,7 +148,6 @@ ServerEvents.tags('item', e => {
         'bossominium:angelic_golden_sword',
         'easypaxellite:golden_paxel',
         'minecolonies:golden_bread',
-        'stalwart_dungeons:golden_hammer',
         'xtraarrows:golden_arrow',
         'xtraarrows:golden_explosive_arrow',
         'xtraarrows:golden_lightning_arrow',
@@ -166,22 +163,6 @@ ServerEvents.tags('item', e => {
         'chunkloaders:ultimate_chunk_loader',
         'constructionwand:core_angel',
         'constructionwand:core_destruction'
-    ]);
-    e.add('legendarytooltips:tungsten_items', [
-        'stalwart_dungeons:raw_tungsten',
-        'stalwart_dungeons:tungsten_ingot',
-        'stalwart_dungeons:tungsten_ore',
-        'stalwart_dungeons:tungsten_helmet',
-        'stalwart_dungeons:tungsten_chestplate',
-        'stalwart_dungeons:tungsten_leggings',
-        'stalwart_dungeons:tungsten_boots',
-        'stalwart_dungeons:tungsten_shield',
-        'stalwart_dungeons:tungsten_axe',
-        'stalwart_dungeons:tungsten_sword',
-        'stalwart_dungeons:tungsten_hoe',
-        'stalwart_dungeons:tungsten_pickaxe',
-        'stalwart_dungeons:tungsten_shovel',
-        'stalwart_dungeons:tungsten_hammer',
     ]);
     e.add('legendarytooltips:amethyst', [
         'oresabovediamonds:amethyst',
@@ -227,27 +208,6 @@ ServerEvents.tags('item', e => {
         'oresabovediamonds:netherite_opal_leggings',
         'oresabovediamonds:netherite_opal_boots',
     ]);
-    e.add('legendarytooltips:warted_tungsten_items', [
-        'stalwart_dungeons:warted_tungsten_helmet',
-        'stalwart_dungeons:warted_tungsten_chestplate',
-        'stalwart_dungeons:warted_tungsten_leggings',
-        'stalwart_dungeons:warted_tungsten_boots',
-        'stalwart_dungeons:warted_tungsten_shield',
-    ]);
-    e.add('legendarytooltips:chorundum_items', [
-        'stalwart_dungeons:chorundum_ore',
-        'stalwart_dungeons:chorundum',
-        'stalwart_dungeons:chorundum_armor_helmet',
-        'stalwart_dungeons:chorundum_armor_chestplate',
-        'stalwart_dungeons:chorundum_armor_leggings',
-        'stalwart_dungeons:chorundum_armor_boots',
-        'stalwart_dungeons:chorundum_shield',
-        'stalwart_dungeons:chorundum_axe',
-        'stalwart_dungeons:chorundum_sword',
-        'stalwart_dungeons:chorundum_hoe',
-        'stalwart_dungeons:chorundum_pickaxe',
-        'stalwart_dungeons:chorundum_shovel',
-    ]);
     e.add('legendarytooltips:stellium_items', [
         'phantasm:stellium_ingot',
         'phantasm:stellium_block',
@@ -282,13 +242,6 @@ ServerEvents.tags('item', e => {
         'bossominium:skelenado_chest_chestplate',
         'bossominium:village_ectoplasm',
         'bossominium:dragon_essence',
-        'meetyourfight:phantoplasm',
-        'meetyourfight:fortunes_favor',
-        'meetyourfight:mossy_tooth',
-        'stalwart_dungeons:ancient_fire',
-        'stalwart_dungeons:awful_crystal',
-        'stalwart_dungeons:awful_gun',
-        'stalwart_dungeons:void_crystal',
         'minecraft:nether_star'
     ]);
     e.add('legendarytooltips:divinity', [
@@ -296,5 +249,48 @@ ServerEvents.tags('item', e => {
         'piglin_expansion:divinity_netherite_ingot',
         'piglin_expansion:piglin_divinity_essence',
         'piglin_expansion:piglin_divinity_staff',
-    ])
+    ]);
+
+    //fixing project vibrant journey tags
+    e.remove('minecraft:oak_logs', [
+        'projectvibrantjourneys:birch_hollow_log',
+        'projectvibrantjourneys:jungle_hollow_log',
+        'projectvibrantjourneys:acacia_hollow_log',
+        'projectvibrantjourneys:dark_oak_hollow_log',
+    ]);
+    e.remove('minecraft:spruce_logs', [
+        'projectvibrantjourneys:oak_hollow_log',
+        'projectvibrantjourneys:birch_hollow_log',
+        'projectvibrantjourneys:jungle_hollow_log',
+        'projectvibrantjourneys:acacia_hollow_log',
+        'projectvibrantjourneys:dark_oak_hollow_log',
+    ]);
+    e.remove('minecraft:acacia_logs', [
+        'projectvibrantjourneys:oak_hollow_log',
+        'projectvibrantjourneys:birch_hollow_log',
+        'projectvibrantjourneys:spruce_hollow_log',
+        'projectvibrantjourneys:jungle_hollow_log',
+        'projectvibrantjourneys:dark_oak_hollow_log',
+    ]);
+    e.remove('minecraft:birch_logs', [
+        'projectvibrantjourneys:oak_hollow_log',
+        'projectvibrantjourneys:spruce_hollow_log',
+        'projectvibrantjourneys:jungle_hollow_log',
+        'projectvibrantjourneys:acacia_hollow_log',
+        'projectvibrantjourneys:dark_oak_hollow_log',
+    ]);
+    e.remove('minecraft:dark_oak_logs', [
+        'projectvibrantjourneys:oak_hollow_log',
+        'projectvibrantjourneys:birch_hollow_log',
+        'projectvibrantjourneys:spruce_hollow_log',
+        'projectvibrantjourneys:jungle_hollow_log',
+        'projectvibrantjourneys:acacia_hollow_log',
+    ]);
+    e.remove('minecraft:jungle_logs', [
+        'projectvibrantjourneys:oak_hollow_log',
+        'projectvibrantjourneys:birch_hollow_log',
+        'projectvibrantjourneys:spruce_hollow_log',
+        'projectvibrantjourneys:acacia_hollow_log',
+        'projectvibrantjourneys:dark_oak_hollow_log',
+    ]);
 });

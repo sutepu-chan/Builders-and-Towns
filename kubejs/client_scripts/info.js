@@ -1,4 +1,4 @@
-JEIEvents.information(e => {
+REIEvents.information(e => {
     let colors = ['white', 'orange', 'magenta', 'light_blue', 'yellow', 'lime', 'pink', 'gray', 'light_gray', 'cyan', 'purple', 'blue', 'brown', 'green', 'red', 'black'];
     //===== waystone =====//
     e.addItem('waystones:return_scroll', 'Return to your previous waystone.');
