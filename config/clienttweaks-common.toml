@@ -1,0 +1,94 @@
+
+[tweaks]
+	#This option will let you climb ladders automatically by just looking upwards, rather than requiring a key to be held down.
+	autoClimbLadder = false
+	#This prevents the last torch in the offhand from being placed.
+	doNotUseLastTorch = false
+	#This option will hide your offhand item. It can be toggled via an optional key binding.
+	hideOffhandItem = false
+	#This option will hide your own potion particle effects for your client (other players will still see them).
+	hideOwnParticleEffects = true
+	#This option will hide your shield unless you are holding a weapon.
+	hideShieldUnlessHoldingWeapon = true
+	#This prevents torches from being placed from your offhand at all.
+	noOffhandTorchAtAll = false
+	#This prevents torches from being placed from your offhand if you have a block in your main hand.
+	noOffhandTorchWithBlock = true
+	#This prevents torches from being placed from your offhand if you have food in your main hand.
+	noOffhandTorchWithFood = true
+	#This prevents torches from being placed from your off hand if you have an empty main hand.
+	noOffhandTorchWithEmptyHand = false
+	#This restricts torches to be placed from the offhand only when you"re holding a tool in your main hand.
+	offhandTorchWithToolOnly = false
+	#This option will disable step assist added by other mods.
+	disableStepAssist = false
+	#This option will disable log stripping.
+	disableLogStripping = false
+	#This adds back the master volume slider to the options screen. Saves you a click!
+	masterVolumeSlider = true
+	#This adds back the music volume slider to the options screen. Saves you a click!
+	musicVolumeSlider = true
+	#This option will make iron fences and glass panes have a bigger hitbox while placing them, making it easier to aim.
+	paneBuildingSupport = true
+	#This option makes the recipe book not shift the inventory when opened. Works best with smaller GUI scales / bigger resolutions.
+	noRecipeBookShifting = true
+
+[customization]
+	#Items that count as torches for the offhand-torch tweak options.
+	torchItems = ["minecraft:torch", "minecraft:soul_torch"]
+	#Items that are allowed to place torches from the offhand if offhandTorchWithToolOnly is enabled.
+	torchTools = []
+	#Items that count as weapons for the offhand-shield hiding tweak options.
+	shieldWeapons = [
+		"minecraft:wooden_sword",
+		"minecraft:stone_sword",
+		"minecraft:golden_sword",
+		"minecraft:iron_sword",
+		"minecraft:diamond_sword",
+		"minecraft:netherite_sword",
+		"bossominium:ender_crystal_sword",
+		"bossominium:angelic_golden_sword",
+		"witherstormmod:command_block_sword",
+		"phantasm:crystalline_sword",
+		"phantasm:stellium_sword",
+		"kobolds:kobold_iron_sword",
+		"minecolonies:chiefsword",
+		"stalwart_dungeons:tungsten_sword",
+		"stalwart_dungeons:chorundum_sword",
+		"oresabovediamonds:amethyst_sword",
+		"oresabovediamonds:black_opal_sword",
+		"oresabovediamonds:netherite_opal_sword",
+		"upgradednetherite:gold_upgraded_netherite_sword",
+		"upgradednetherite:fire_upgraded_netherite_sword",
+		"upgradednetherite:ender_upgraded_netherite_sword",
+		"upgradednetherite:water_upgraded_netherite_sword",
+		"upgradednetherite:wither_upgraded_netherite_sword",
+		"upgradednetherite:poison_upgraded_netherite_sword",
+		"upgradednetherite:poison_upgraded_netherite_sword",
+		"upgradednetherite:feather_upgraded_netherite_sword",
+		"upgradednetherite:corrupt_upgraded_netherite_sword",
+		"upgradednetherite:echo_upgraded_netherite_sword",
+		"upgradednetherite_ultimate:ultimate_upgraded_netherite_sword",
+		"witherbold:witherbold_sword",
+		"enlightened_end:adamantite_sword"
+	]
+	#Items that count as shields for the offhand-shield hiding tweak options.
+	shieldItems = [
+		"bossominium:stone_shielder",
+		"stalwart_dungeons:tungsten_shield",
+		"stalwart_dungeons:warted_tungsten_shield",
+		"stalwart_dungeons:chorundum_shield",
+		"upgradednetherite:netherite_shield",
+		"upgradednetherite:gold_upgraded_netherite_shield",
+		"upgradednetherite:fire_upgraded_netherite_shield",
+		"upgradednetherite:ender_upgraded_netherite_shield",
+		"upgradednetherite:water_upgraded_netherite_shield",
+		"upgradednetherite:wither_upgraded_netherite_shield",
+		"upgradednetherite:poison_upgraded_netherite_shield",
+		"upgradednetherite:poison_upgraded_netherite_shield",
+		"upgradednetherite:feather_upgraded_netherite_shield",
+		"upgradednetherite:corrupt_upgraded_netherite_shield",
+		"upgradednetherite:echo_upgraded_netherite_shield",
+		"upgradednetherite_ultimate:ultimate_upgraded_netherite_shield"
+	]
+

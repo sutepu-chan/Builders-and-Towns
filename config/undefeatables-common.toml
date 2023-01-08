@@ -9,10 +9,10 @@
 	healthPerTier = 100.0
 	#Armor bonus per tier.
 	#Range: 0.0 ~ 20.0
-	armorPerTier = 8.0
+	armorPerTier = 7.0
 	#Armor toughness bonus per tier.
 	#Range: 0.0 ~ 20.0
-	armorToughnessPerTier = 5.0
+	armorToughnessPerTier = 4.0
 	#Spawning chance.
 	#Range: > 1
 	spawningChance = 1

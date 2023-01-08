@@ -76,7 +76,6 @@ ServerEvents.tags('item', e => {
         'minecraft:diamond_boots',
         'minecraft:diamond_horse_armor',
         'easypaxellite:diamond_paxel',
-        'leashed:diamond_lead',
         'stalwart_dungeons:diamond_hammer',
         'xtraarrows:diamond_arrow',
         'xtraarrows:diamond_explosive_arrow',
@@ -92,6 +91,7 @@ ServerEvents.tags('item', e => {
         'xtraarrows:diamond_arrowhead',
         'chunkloaders:ultimate_chunk_loader',
         'constructionwand:diamond_wand',
+        'mob_catcher:diamond_mob_catcher',
     ]);
     e.add('legendarytooltips:netherite_items', [
         'minecraft:netherite_block',
@@ -127,6 +127,7 @@ ServerEvents.tags('item', e => {
         'xtraarrows:netherite_atlantean_arrow',
         'xtraarrows:netherite_arrowhead',
         'constructionwand:infinity_wand',
+        'mob_catcher:netherite_mob_catcher',
     ]);
     e.add('legendarytooltips:gold_items', [
         'minecraft:raw_gold_block',
