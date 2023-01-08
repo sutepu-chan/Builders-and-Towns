@@ -10,4 +10,6 @@ ServerEvents.recipes(e => {
         U: '#minecraft:logs_unstripped',
         S: '#minecraft:logs_stripped'
     }).id(`kubejs:vinery/grapevine_stem`);
+
+    e.replaceInput({output: 'vinery:wine_rack_4'}, 'minecraft:iron_nugget', 'minecraft:gold_nugget');
 })

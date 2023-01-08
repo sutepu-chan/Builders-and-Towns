@@ -7,7 +7,5 @@ global.recipe_disable = [
     'piglin_expansion:divinity_netherite_armor_helmet',
     'piglin_expansion:divinity_netherite_armor_chestplate',
     'piglin_expansion:divinity_netherite_armor_leggings',
-    'piglin_expansion:divinity_netherite_armor_boots',
-    'nourished_nether:basalt_slab',
-    
+    'piglin_expansion:divinity_netherite_armor_boots',    
 ]
