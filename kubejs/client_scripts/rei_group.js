@@ -3,6 +3,22 @@ REIEvents.groupEntries(e => {
     //===== spawn eggs =====//
     e.groupItems('kubejs:rei_groups/spawn_eggs', 'Spawn Eggs', [
         /spawn_egg/,
+        'barbarianegg',
+        'barbarcheregg',
+        'barbchiefegg',
+        'pirateegg',
+        'piratearcheregg',
+        'piratecaptainegg',
+        'mummyegg',
+        'mummyarcheregg',
+        'pharaoegg',
+        'shieldmaidenegg',
+        'norsemenarcheregg',
+        'norsemenchiefegg',
+        'amazonegg',
+        'amazonspearmanegg',
+        'amazonchiefegg',
+        'mercegg',
     ]);
     //===== color variants =====//
     function colorArray(whiteItem) {
@@ -46,7 +62,110 @@ REIEvents.groupEntries(e => {
     groupItems('Paper Lamp', `mcwlights:white_paper_lamp`);
     groupItems('Mosaic Glass', 'mcwwindows:white_mosaic_glass');
     groupItems('Mosaic Glass Pane', 'mcwwindows:white_mosaic_glass_pane');
-
-    e.groupItemsByTaag('kubejs:rei_groups/glazed_terracotta', 'Terracotta', 'minecolonies:glazed_terracotta');
-
+    groupItems('Sharestones', 'waystones:white_sharestone');
+    
+    e.groupItemsByTag('kubejs:rei_groups/glazed_terracotta', 'Terracotta', 'minecolonies:glazed_terracotta');
+    
+    //===== wood variants =====//
+    let woodTypes = [
+        'oak',
+        'spruce',
+        'birch',
+        'jungle',
+        'acacia',
+        'dark_oak',
+        'mangrove',
+        'crimson',
+        'warped',
+    ];
+    //trapdoors
+    let trapdoorTypes = [
+        'barn',
+        'barred',
+        'beach',
+        'cottage',
+        'four_panel',
+        'glass',
+        'mystic',
+        'paper',
+        'tropical',
+        'swamp',
+        'bamboo',
+    ];
+    woodTypes.forEach(woodType => {
+        let temp = [];
+        trapdoorTypes.forEach(trapdoorType => {
+            temp.push(`mcwtrpdoors:${woodType}_${trapdoorType}_trapdoor`);
+        });
+        e.groupItems(
+            `kubejs:rei_groups/mcwtrpdoors/${woodType}`,
+            'Macaw\'s ' + woodType.charAt(0).toUpperCase() + woodType.slice(1) + ' Trapdoors',
+            temp
+        );
+        if (woodType === 'oak') {
+            trapdoorTypes.push('classic');
+        }
+    });
+    //fence
+    let fenceTypes = [
+        'picket_fence',
+        'stockade_fence',
+        'horse_fence',
+        'wired_fence',
+        'highley_gate',
+        'pyramid_gate',
+    ];
+    woodTypes.forEach(woodType => {
+        let temp = [];
+        fenceTypes.forEach(fenceType => {
+            temp.push(`mcwfences:${woodType}_${fenceType}`);
+        });
+        e.groupItems(
+            `kubejs:rei_groups/mcwfences/${woodType}`,
+            'Macaw\'s ' + woodType.charAt(0).toUpperCase() + woodType.slice(1) + ' Fence',
+            temp
+        );
+    });
+    //furniture
+    let furnitureTypes = [
+        'wardrobe',
+        'modern_wardrobe',
+        'double_wardrobe',
+        'bookshelf',
+        'bookshelf_cupboard',
+        'drawer',
+        'double_drawer',
+        'bookshelf_drawer',
+        'lower_bookshelf_drawer',
+        'large_drawer',
+        'lower_triple_drawer',
+        'triple_drawer',
+        'desk',
+        'covered_desk',
+        'modern_desk',
+        'table',
+        'end_table',
+        'coffee_table',
+        'glass_table',
+        'chair',
+        'modern_chair',
+        'striped_chair',
+        'stool_chair',
+        'counter',
+        'drawer_counter',
+        'double_drawer_counter',
+        'cupboard_counter',
+    ];
+    woodTypes.forEach(woodType => {
+        let temp = [];
+        furnitureTypes.forEach(furnitureType => {
+            temp.push(`mcwfurnitures:${woodType}_${furnitureType}`);
+            temp.push(`mcwfurnitures:stripped_${woodType}_${furnitureType}`);
+        });
+        e.groupItems(
+            `kubejs:rei_groups/mcwfurnitures/${woodType}`,
+            'Macaw\'s ' + woodType.charAt(0).toUpperCase() + woodType.slice(1) + ' Furnitures',
+            temp
+        );
+    });
 })

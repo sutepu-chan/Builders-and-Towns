@@ -68,10 +68,12 @@ ItemEvents.tooltip(e => {
     });
 
     //===== construction wand =====//
-    aquaTooltip('constructionwand:stone_wand', `Builder's wand Renewal! Shift-scroll to set mode.`);
-    aquaTooltip('constructionwand:iron_wand', `Builder's wand Renewal! Shift-scroll to set mode.`);
-    aquaTooltip('constructionwand:diamond_wand', `Builder's wand Renewal! Shift-scroll to set mode.`);
-    aquaTooltip('constructionwand:infinity_wand', `Builder's wand Renewal! Shift-scroll to set mode.`);
+    aquaTooltip([
+        'constructionwand:stone_wand',
+        'constructionwand:iron_wand',
+        'constructionwand:diamond_wand',
+        'constructionwand:infinity_wand'
+    ], 'Builder\'s wand Renewal! Shift+Scroll to set mode. Ctrl+Shift+Scroll to open menu');
 
     //===== car =====//
     grayTooltip('car:oilmill', 'Convert Canola in Oil');
@@ -88,4 +90,10 @@ ItemEvents.tooltip(e => {
 
     //===== avaritia =====//
     darkPurpleTooltip('@avaritia', 'Items for development! Not part of game contents!')
-})
+
+    //===== bartering station =====//
+    grayTooltip('barteringstation:bartering_station', 'Auto bartering with piglins within 12 blocks and 4 blocks radius horizontally and vertically respectively.')
+
+    //===== dragon mounts =====//
+    darkBlueTooltip('dragonmounts:dragon_egg', 'Dragon eggs will adapt to surrounding environment and change the breed.')
+});

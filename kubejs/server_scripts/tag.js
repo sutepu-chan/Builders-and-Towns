@@ -92,6 +92,7 @@ ServerEvents.tags('item', e => {
         'chunkloaders:ultimate_chunk_loader',
         'constructionwand:diamond_wand',
         'mob_catcher:diamond_mob_catcher',
+        'stalwart_dungeons:diamond_hammer',
     ]);
     e.add('legendarytooltips:netherite_items', [
         'minecraft:netherite_block',
@@ -126,6 +127,7 @@ ServerEvents.tags('item', e => {
         'xtraarrows:netherite_arrowhead',
         'constructionwand:infinity_wand',
         'mob_catcher:netherite_mob_catcher',
+        'stalwart_dungeons:netherite_hammer',
     ]);
     e.add('legendarytooltips:gold_items', [
         'minecraft:raw_gold_block',
@@ -162,7 +164,8 @@ ServerEvents.tags('item', e => {
         'xtraarrows:golden_arrowhead',
         'chunkloaders:ultimate_chunk_loader',
         'constructionwand:core_angel',
-        'constructionwand:core_destruction'
+        'constructionwand:core_destruction',
+        'stalwart_dungeons:golden_hammer',
     ]);
     e.add('legendarytooltips:amethyst', [
         'oresabovediamonds:amethyst',

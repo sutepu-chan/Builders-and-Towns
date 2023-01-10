@@ -12,8 +12,9 @@ ItemEvents.tooltip(e => {
             let duration = effect.duration / 20
             let minute = Math.floor(duration / 60);
             let seconds = `${duration % 60}`;
-            if (seconds.length == 1)
+            if (seconds.length == 1) {
                 seconds = "0" + seconds;
+            }
             let es = effect.effect.beneficial ? "§9" : "§c"
             lines.add(`${es}${cs}${effect.effect.displayName.getString()} (${minute}:${seconds})`)
             effect.effect.attributeModifiers.forEach((attribute, modifier) => {
