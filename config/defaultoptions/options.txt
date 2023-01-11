@@ -20,7 +20,7 @@ toggleCrouch:false
 toggleSprint:false
 darkMojangStudiosBackground:false
 hideLightningFlashes:false
-mouseSensitivity:0.5
+mouseSensitivity:0.43309859154929575
 fov:0.0
 screenEffectScale:1.0
 fovEffectScale:1.0
@@ -37,7 +37,7 @@ ao:2
 prioritizeChunkUpdates:0
 biomeBlendRadius:2
 renderClouds:"false"
-resourcePacks:["vanilla","mod_resources","file/STONEBORN - 1.19 - V3.2.zip","file/Enhanced Tools  Armour.zip","file/Crops-3D_MC1.19_v1.2.0.zip","file/EclecticTrove-1.19-1.1.0.zip","file/Slightly-Improved-Font-1.0.0.zip"]
+resourcePacks:["vanilla","mod_resources","file/STONEBORN - 1.19 - V3.2.zip","file/Enhanced Tools  Armour.zip","file/Crops-3D_MC1.19_v1.2.0.zip","file/EclecticTrove-1.19-1.1.0.zip","file/Slightly-Improved-Font-1.0.0.zip","file/Fantasy_Ores_v6.1_shiny_ores.zip"]
 incompatibleResourcePacks:["file/Slightly-Improved-Font-1.0.0.zip"]
 lastServer:
 lang:en_us
