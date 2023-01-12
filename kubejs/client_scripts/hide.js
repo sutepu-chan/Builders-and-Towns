@@ -1,16 +1,14 @@
 REIEvents.hide('item', e => {
-    global.recipe_disable.forEach(item => {
-        e.hide(item);
-    })
     let libItems = [
         '@theoneprobe',
         '@structure_gel',
         '@itemfilters',
-        '@ftbquests'
+        '@ftbquests',
+        '@vanilla_animations'
     ]
     libItems.forEach(libItem => {
         e.hide(libItem);
-    })
+    });
 
     let frostedFriendItems = [
         'frosted_friends:snow_chest_1',
@@ -43,8 +41,8 @@ REIEvents.hide('item', e => {
         'frosted_friends:snow_body_without_arm_chestplate',
         'frosted_friends:snow_body_chestplate',
         'frosted_friends:snowman_projectile',
-    ]
+    ];
     frostedFriendItems.forEach(frostedFriendItem => {
         e.hide(frostedFriendItem);
-    })
+    });
 })

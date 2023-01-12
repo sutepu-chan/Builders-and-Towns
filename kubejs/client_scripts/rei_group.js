@@ -63,9 +63,9 @@ REIEvents.groupEntries(e => {
     groupItems('Mosaic Glass', 'mcwwindows:white_mosaic_glass');
     groupItems('Mosaic Glass Pane', 'mcwwindows:white_mosaic_glass_pane');
     groupItems('Sharestones', 'waystones:white_sharestone');
-    
+
     e.groupItemsByTag('kubejs:rei_groups/glazed_terracotta', 'Terracotta', 'minecolonies:glazed_terracotta');
-    
+
     //===== wood variants =====//
     let woodTypes = [
         'oak',
@@ -169,6 +169,50 @@ REIEvents.groupEntries(e => {
         );
     });
 
-    //===== dog bed =====//
-    e.groupitems('kubejs:rei_groups/doggytalents/dog_bed', 'Dog Beds', Item.of('doggytalents:dog_bed').ignoreNBT());
+    //===== nbt items =====//
+    const useNbt = [
+        'doggytalents:dog_bed'
+    ];
+    useNbt.forEach(id => {
+        const item = Item.of(id);
+        const { namespace, path } = Utils.id(item.id);
+        e.groupSameItem(`kubejs:rei_groups/${namespace}/${path}`, item.name, item);
+    });
+
+    //===== additional lights =====//
+    let lightTypes = [
+        ['al_torch', 'Altorch'],
+        ['standing_torch_s', 'Short Standing Torch'],
+        ['standing_torch_l', 'Long Standing Torch'],
+        ['fire_pit_s', 'Short Fire Pit'],
+        ['fire_pit_l', 'Long Fire Pit'],
+    ];
+    let materialTypes = [
+        'cobblestone',
+        'mossy_cobblestone',
+        'stone',
+        'stone_bricks',
+        'mossy_stone_bricks',
+        'smooth_stone',
+        'sandstone',
+        'end_stone',
+        'end_stone_bricks',
+        'nether_bricks',
+        'red_nether_bricks',
+        'blackstone',
+        'glass',
+        'iron_block',
+        'gold_block',
+        'diamond_block',
+        'packed_ice',
+        'pink_wool',
+        'magenta_wool',
+    ];
+    lightTypes.forEach(lightType => {
+        let temp = [];
+        materialTypes.forEach(materialType => {
+            temp.push(`additonal_lights:${lightType[1]}_${materialType}`);
+        });
+        e.groupItems(`kubejs:rei_groups/additonal_lights/${lightType[1]}`, lightType[2], temp);
+    });
 })
