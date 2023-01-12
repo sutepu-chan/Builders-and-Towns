@@ -168,4 +168,7 @@ REIEvents.groupEntries(e => {
             temp
         );
     });
+
+    //===== dog bed =====//
+    e.groupitems('kubejs:rei_groups/doggytalents/dog_bed', 'Dog Beds', Item.of('doggytalents:dog_bed').ignoreNBT());
 })
