@@ -12,6 +12,8 @@ ServerEvents.tags('item', e => {
     e.add('forge:axes', /.+:.+_axe/);
     e.add('forge:hoes', /.+:.+_hoe/);
     e.add('forge:swords', /.+:.+_sword/);
+
+    //===== legendary tooltips =====//
     e.add('legendarytooltips:upgradednetherite_tools', [
         '#upgradednetherite:upgraded_netherite_sword',
         '#upgradednetherite:upgraded_netherite_bow',

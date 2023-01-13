@@ -63,8 +63,7 @@ REIEvents.groupEntries(e => {
     groupItems('Mosaic Glass', 'mcwwindows:white_mosaic_glass');
     groupItems('Mosaic Glass Pane', 'mcwwindows:white_mosaic_glass_pane');
     groupItems('Sharestones', 'waystones:white_sharestone');
-
-    e.groupItemsByTag('kubejs:rei_groups/glazed_terracotta', 'Terracotta', 'minecolonies:glazed_terracotta');
+    groupItems('Glazed Terracotta', 'minecraft:white_glazed_terracotta');
 
     //===== wood variants =====//
     let woodTypes = [
@@ -169,19 +168,10 @@ REIEvents.groupEntries(e => {
         );
     });
 
-    //===== nbt items =====//
-    const useNbt = [
-        'doggytalents:dog_bed'
-    ];
-    useNbt.forEach(id => {
-        const item = Item.of(id);
-        const { namespace, path } = Utils.id(item.id);
-        e.groupSameItem(`kubejs:rei_groups/${namespace}/${path}`, item.name, item);
-    });
-
     //===== additional lights =====//
     let lightTypes = [
-        ['al_torch', 'Altorch'],
+        ['al_lamp', 'Al Lamp'],
+        ['al_torch', 'Al Torch'],
         ['standing_torch_s', 'Short Standing Torch'],
         ['standing_torch_l', 'Long Standing Torch'],
         ['fire_pit_s', 'Short Fire Pit'],
@@ -207,12 +197,27 @@ REIEvents.groupEntries(e => {
         'packed_ice',
         'pink_wool',
         'magenta_wool',
+        'polished_andesite',
+        'polished_diorite',
+        'polished_granite',
+        'cut_sandstone',
+        'polished_blackstone',
+        'acacia_planks',
+        'birch_planks',
+        'oak_planks',
+        'dark_oak_planks',
+        'spruce_planks',
+        'jungle_planks',
+        'crimson_planks',
+        'warped_planks',
     ];
-    lightTypes.forEach(lightType => {
+    lightTypes.forEach(([lightType, name]) => {
         let temp = [];
         materialTypes.forEach(materialType => {
-            temp.push(`additonal_lights:${lightType[1]}_${materialType}`);
+            if (!Item.of(`additional_lights:${lightType}_${materialType}`).isEmpty()) {
+                temp.push(`additional_lights:${lightType}_${materialType}`);
+            }
         });
-        e.groupItems(`kubejs:rei_groups/additonal_lights/${lightType[1]}`, lightType[2], temp);
+        e.groupItems(`kubejs:rei_groups/additional_lights/${lightType}`, name, temp);
     });
 })

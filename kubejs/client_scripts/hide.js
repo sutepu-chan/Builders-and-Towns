@@ -4,7 +4,6 @@ REIEvents.hide('item', e => {
         '@structure_gel',
         '@itemfilters',
         '@ftbquests',
-        '@vanilla_animations'
     ]
     libItems.forEach(libItem => {
         e.hide(libItem);
@@ -45,4 +44,6 @@ REIEvents.hide('item', e => {
     frostedFriendItems.forEach(frostedFriendItem => {
         e.hide(frostedFriendItem);
     });
+
+    e.hide(Item.of('doggytalents:dog_bed').ignoreNBT());
 })
