@@ -1,6 +1,5 @@
 REIEvents.information(e => {
-    e.add('minecraft:dirt', 'Dirt', ['Test']);
-    /*
+    /* mod bug
     //===== car =====//
     e.add("car:canola_cake", ["A side product obtained from putting Canola into Oil Mill."]);
     e.add("car:canola_oil_bucket", ["Obtained by putting Canol into Oil Mill."]);

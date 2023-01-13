@@ -44,6 +44,4 @@ REIEvents.hide('item', e => {
     frostedFriendItems.forEach(frostedFriendItem => {
         e.hide(frostedFriendItem);
     });
-
-    e.hide(Item.of('doggytalents:dog_bed').ignoreNBT());
 })
